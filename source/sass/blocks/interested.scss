@@ -1,0 +1,33 @@
+.interested {
+  font-family: "PT Sans", sans-serif;
+
+  text-transform: uppercase;
+  padding: 38px 18px 49px;
+
+  .interested__title {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .interested__description {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #333333;
+  }
+
+  .interested__button {
+    font-size: 21px;
+
+    color: #ffffff;
+    background-color: #81b3d2;
+  }
+}

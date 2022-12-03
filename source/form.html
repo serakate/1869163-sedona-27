@@ -4,39 +4,37 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="body-container">
 
-    <header class="main-header">
-      <a class="main-header__logo logo">
+    <header class="header">
+      <a class="header__logo logo" href="index.html">
         <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип «Седона».">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper wrapper">
-          <button class="wrapper__toggle" type="button">
-            <span class="visually-hidden">Закрыть.</span>
-          </button>
-          <ul class="main-nav__list menu">
-            <li class="menu__item">
-              <a href="index.html">
+      <nav class="nav">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="menu__item">
-              <a href="catalog.html">
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="menu__item">
-              <a>
+            <li class="nav__item">
+              <a class="nav__link">
                 Форма отзыва
               </a>
             </li>
-            <li class="menu__item">
-              <a href="#">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -46,7 +44,7 @@
     </header>
 
     <main class="main-container">
-      <div class="hero-catalog">
+      <div class="hero">
         <h1 class="visually-hidden">Форма для вашего отзыва.</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="229" height="39" fill="none">
           <path fill="#fff"
@@ -55,83 +53,87 @@
       </div>
 
       <section class="feedback">
-        <h2 class="visually-hidden">Здесь вы можете оставить свой отзыв.</h2>
+        <div class="feadback__heading heading">
+          <h2 class="heading__title">Оставьте свой отзыв</h2>
+          <p class="heading__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+            вами достопримечательностях</p>
+        </div>
 
         <form class="feedback-form" action="#" method="get">
 
           <fieldset class="feedback-form__name">
-            <legend class="feedback-form__title">Представьтесь:</legend>
+            <legend class="feedback-form__heading">Представьтесь:</legend>
 
-            <p><label for="first-name">Имя*:</label>
+            <p><label class="feedback-form__title" for="first-name">Имя*:</label>
               <input class="feedback-form__field" type="text" id="first-name" name="first-name"
                 placeholder="Укажите имя" required>
             </p>
 
-            <p><label for="last-name">Фамилия*:</label>
+            <p><label class="feedback-form__title" for="last-name">Фамилия*:</label>
               <input class="feedback-form__field" type="text" id="last-name" name="last-name"
                 placeholder="Укажите фамилию" required>
             </p>
 
-            <p><label for="patronym">Отчество:</label>
+            <p><label class="feedback-form__title" for="patronym">Отчество:</label>
               <input class="feedback-form__field" type="text" id="patronym" name="patronym"
                 placeholder="Укажите отчество">
             </p>
           </fieldset>
 
           <fieldset class="feedback-form__contacts">
-            <legend class="feedback-form__title">Контактная информация:</legend>
+            <legend class="feedback-form__heading">Контактная информация:</legend>
 
-            <p><label for="mobile">Контактный телефон*:</label>
+            <p><label class="feedback-form__title" for="mobile">Контактный телефон*:</label>
               <input class="feedback-form__field" type="text" id="mobile" name="mobile" placeholder="Введите телефон"
                 required>
             </p>
 
-            <p><label for="email">Электронная почта*:</label>
+            <p><label class="feedback-form__title" for="email">Электронная почта*:</label>
               <input class="feedback-form__field" type="text" id="email" name="email" placeholder="Введите e-mail"
                 required>
             </p>
           </fieldset>
 
           <fieldset class="feedback-form__opinion opinion">
-            <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+            <legend class="feedback-form__heading">Ваше общее впечатление:</legend>
 
             <div class="opinion__option">
               <input type="radio" id="positive" name="opinion" value="positive" checked>
-              <label for="positive">Скорее положительное</label>
+              <label class="opinion__title" for="positive">Скорее положительное</label>
             </div>
             <div class="opinion__option">
               <input type="radio" id="negative" name="opinion" value="negative">
-              <label for="negative">Скорее отрицательное</label>
+              <label class="opinion__title" for="negative">Скорее отрицательное</label>
             </div>
             <div class="opinion__option">
               <input type="radio" id="difficult" name="opinion" value="difficult">
-              <label for="difficult">Затрудняюсь ответить</label>
+              <label class="opinion__title" for="difficult">Затрудняюсь ответить</label>
             </div>
           </fieldset>
 
           <fieldset class="feedback-form__sightseeing sightseeing">
-            <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__heading">Посещенные достопримечательности:</legend>
 
             <div class="sightseeing__option">
               <input type="checkbox" id="bridge" name="bridge" checked>
-              <label for="bridge">Мост Дьявола</label>
+              <label class="sightseeing__title" for="bridge">Мост Дьявола</label>
             </div>
             <div class="sightseeing__option">
               <input type="checkbox" id="mountain" name="mountain" checked>
-              <label for="mountain">Гора-Колокол</label>
+              <label class="sightseeing__title" for="mountain">Гора-Колокол</label>
             </div>
             <div class="sightseeing__option">
               <input type="checkbox" id="park" name="park" checked>
-              <label for="park">Слайд-парк</label>
+              <label class="sightseeing__title" for="park">Слайд-парк</label>
             </div>
             <div class="sightseeing__option">
               <input type="checkbox" id="cliff" name="cliff">
-              <label for="cliff">Красные скалы</label>
+              <label class="sightseeing__title" for="cliff">Красные скалы</label>
             </div>
           </fieldset>
 
           <fieldset class="feedback-form__review">
-            <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+            <legend class="feedback-form__heading">Опишите свои эмоции:</legend>
 
             <label class="visually-hidden" for="review">Поделитесь с нами своими эмоциями.</label>
             <input class="feedback-form__field" type="text" id="review" name="review"
@@ -149,12 +151,12 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
 
-      <div class="main-footer__wrapper">
-        <a class="main-footer__hashtag" href="#">#visitsedona</a>
+      <div class="footer__wrapper">
+        <a class="footer__hashtag" href="#">#visitsedona</a>
 
-        <div class="main-footer__social social">
+        <div class="footer__social social">
           <span class="visually-hidden">Ссылки на социальные сети.</span>
           <ul class="social__list">
             <li class="social__item">
@@ -198,7 +200,7 @@
           </ul>
         </div>
 
-        <a class="main-footer__copyright" href="https://htmlacademy.ru/">
+        <a class="footer__copyright" href="https://htmlacademy.ru/">
           <span class="visually-hidden">Сайт разработчика.
           </span>
           <svg xmlns="http://www.w3.org/2000/svg" width="129" height="36" fill="none">
