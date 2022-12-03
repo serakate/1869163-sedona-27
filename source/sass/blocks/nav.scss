@@ -1,0 +1,22 @@
+.nav {
+  min-width: 320px;
+  .nav__wrapper {
+    background-color: #81B3D2;
+  }
+  .nav__list {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 18px;
+    line-height: 26px;
+
+    text-transform: uppercase;
+    list-style: none;
+  }
+  .nav__link {
+    color: #ffffff;
+
+    text-decoration: none;
+  }
+}
