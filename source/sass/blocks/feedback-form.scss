@@ -1,6 +1,7 @@
 .feedback-form {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
+
   .feedback-form__heading {
     font-weight: 700;
     font-size: 18px;
@@ -8,6 +9,7 @@
 
     text-transform: uppercase;
   }
+
   .feedback-form__title {
     font-weight: 400;
     font-size: 14px;
@@ -17,6 +19,7 @@
 
     color: #333333;
   }
+
   .feedback-form__field {
     font-weight: 700;
     font-size: 18px;
@@ -28,10 +31,11 @@
 
     padding: 16px 16px;
   }
+
   .feedback-form__button {
     font-size: 21px;
 
     color: #ffffff;
-    background-color: #81B3D2;
+    background-color: #81b3d2;
   }
 }

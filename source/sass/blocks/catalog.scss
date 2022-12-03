@@ -1,8 +1,10 @@
 .catalog {
   font-family: "PT Sans", sans-serif;
+
   .catalog__list {
     list-style: none;
   }
+
   .catalog__title {
     margin: 0;
 
@@ -12,6 +14,7 @@
 
     text-transform: uppercase;
   }
+
   .catalog__description {
     margin: 0;
 
@@ -21,6 +24,7 @@
 
     text-transform: capitalize;
   }
+
   .catalog__img {
     height: 100%;
     object-fit: cover;

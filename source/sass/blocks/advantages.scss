@@ -10,6 +10,7 @@
     font-size: 18px;
     line-height: 26px;
   }
+
   .advantages__description {
     margin: 0;
 
@@ -17,21 +18,26 @@
     font-size: 14px;
     line-height: 21px;
   }
+
   .advantages__list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
+
   .advantages__item {
     padding: 37px 18px;
+
     &--accent {
-      background-color: #81B3D2;
+      background-color: #81b3d2;
       color: #ffffff;
     }
+
     &--secondary {
       background-color: #eeeeee;
     }
   }
+
   .advantages__img {
     height: 100%;
     object-fit: cover;
