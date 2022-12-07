@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+@import "./common/variables.scss";
+@import "./common/*.scss";
+@import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
+@import "./blocks/body.scss";
+@import "./blocks/body-container.scss";
+@import "./blocks/button.scss";
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/heading.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/list-icon.scss";
+@import "./blocks/list-secondary.scss";
+@import "./blocks/interested.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/item-main.scss";
+@import "./blocks/presentation.scss";
+@import "./blocks/form.scss";
+@import "./blocks/user-info.scss";
+@import "./blocks/form-block.scss";
+@import "./blocks/input-text.scss";

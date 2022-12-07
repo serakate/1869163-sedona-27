@@ -1,0 +1,6 @@
+.user-info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}

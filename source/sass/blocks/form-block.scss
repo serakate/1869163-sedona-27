@@ -1,0 +1,32 @@
+.form-block {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+
+  .form-block__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-transform: uppercase;
+
+    color: #333333;
+  }
+
+  .form-block__name-list {
+    list-style: none;
+  }
+
+  .form-block__grade-list {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    list-style: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
