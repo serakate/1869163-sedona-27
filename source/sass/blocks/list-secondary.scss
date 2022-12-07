@@ -1,0 +1,7 @@
+.list-secondary {
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

@@ -2,6 +2,10 @@
   background-color: #ffffff;
   color: #000000;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
   .list-icon__item {
     padding: 23px 18px;
     text-align: start;

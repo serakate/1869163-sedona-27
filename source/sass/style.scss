@@ -1,21 +1,7 @@
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-style: normal;
-
-  src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-
-  src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
-  font-display: swap;
-}
-
+@import "./common/variables.scss";
+@import "./common/*.scss";
+@import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
 @import "./blocks/body.scss";
 @import "./blocks/body-container.scss";
 @import "./blocks/button.scss";
@@ -26,12 +12,15 @@
 @import "./blocks/heading.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/list-icon.scss";
+@import "./blocks/list-secondary.scss";
 @import "./blocks/interested.scss";
 @import "./blocks/map.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/catalog.scss";
+@import "./blocks/item-main.scss";
 @import "./blocks/presentation.scss";
-@import "./blocks/feedback-form.scss";
-@import "./blocks/opinion.scss";
-@import "./blocks/sightseeing.scss";
+@import "./blocks/form.scss";
+@import "./blocks/user-info.scss";
+@import "./blocks/form-block.scss";
+@import "./blocks/input-text.scss";

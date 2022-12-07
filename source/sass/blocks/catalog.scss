@@ -2,7 +2,21 @@
   font-family: "PT Sans", sans-serif;
 
   .catalog__list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 480px 347px 347px;
+      row-gap: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   .catalog__title {
