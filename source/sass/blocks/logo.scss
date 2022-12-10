@@ -1,6 +1,15 @@
 .logo {
-  .logo__img {
-    height: 96px;
-    width: 185px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    z-index: 5;
   }
+}
+
+.logo__img {
+  height: 96px;
+  width: 185px;
 }

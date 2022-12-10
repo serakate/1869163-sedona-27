@@ -2,31 +2,51 @@
   font-family: "PT Sans", sans-serif;
   font-style: normal;
 
-  .form-block__title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+  margin: 0 0 50px;
+  padding: 0;
 
-    text-transform: uppercase;
+  min-height: 200px;
 
-    color: #333333;
+  border: none;
+}
+
+.form-block__title {
+  @include regular-text(400);
+
+  margin-right: auto;
+
+  text-transform: uppercase;
+
+  color: #333333;
+}
+
+.form-block__name-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form-block__grade-list {
+  @include big-text(700);
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .form-block__name-list {
-    list-style: none;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
   }
+}
 
-  .form-block__grade-list {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-
-    list-style: none;
-
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  }
+.form-block__name-item {
+  display: flex;
+  flex-direction: column;
 }

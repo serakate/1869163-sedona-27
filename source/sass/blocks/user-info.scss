@@ -1,6 +1,8 @@
 .user-info {
+  padding: 50px;
+
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }

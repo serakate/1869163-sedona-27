@@ -1,3 +1,28 @@
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width-only: 767px;
+
+@mixin huge-text($weight) {
+  font-weight: $weight;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@mixin big-text($weight) {
+  font-weight: $weight;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin regular-text($weight) {
+  font-weight: $weight;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin flex-center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}

@@ -4,30 +4,40 @@
   text-transform: uppercase;
   padding: 38px 18px 49px;
 
-  .interested__title {
-    margin: 0;
+  min-height: 290px;
+}
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-  }
+.interested__title {
+  font-style: normal;
 
-  .interested__description {
-    margin: 0;
+  margin: 0 0 30px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+  @include huge-text(700);
+}
 
-    color: #333333;
-  }
+.interested__description {
+  font-style: normal;
 
-  .interested__button {
-    font-size: 21px;
+  margin: 0 0 50px;
 
-    color: #ffffff;
-    background-color: #81b3d2;
+  @include regular-text(400);
+
+  color: #333333;
+}
+
+.interested__button {
+  @include huge-text(700);
+
+  color: #ffffff;
+  background-color: #81b3d2;
+
+  min-width: 284px;
+  height: 58px;
+
+  padding: 16px 49px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+    padding: 15px 121px;
   }
 }

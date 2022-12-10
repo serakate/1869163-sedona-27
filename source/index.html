@@ -15,7 +15,7 @@
       <a class="header__logo logo" href="index.html">
         <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип «Седона».">
       </a>
-      <nav class="nav">
+      <nav class="nav nav--closed nav--nojs">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="nav__wrapper">
           <ul class="nav__list">
@@ -72,7 +72,8 @@
                     Настоящий городок
                   </h3>
                   <p class="advantages__description">
-                    Седона не атракцион для туристов,там течет своя жизнь
+                    <span class="display-block">— №1 —</span>
+                    <span>Седона не атракцион для туристов,там течет своя жизнь</span>
                   </p>
                 </div>
                 <div class="advantages__img-wrapper">
@@ -118,7 +119,8 @@
                     Там есть мост дьявола
                   </h3>
                   <p class="advantages__description">
-                    Да, по нему можно пройти! Если вы осмелитесь, конечно
+                    <span class="display-block">— №2 —</span>
+                    <span>Да, по нему можно пройти! Если вы осмелитесь, конечно</span>
                   </p>
                 </div>
                 <div class="advantages__img-wrapper">
@@ -128,29 +130,32 @@
 
               <ul class="advantages__list list-secondary">
                 <li class="advantages__item advantages__item--secondary">
-                  <h3 class="advantages__title">
+                  <h3 class="advantages__title advantages__title--secondary">
                     Небольшая площадь
                   </h3>
-                  <p class="advantages__description">
-                    Все интересные места находятся очень близко
+                  <p class="advantages__description advantages__description--secondary">
+                    <span class="display-block">— №3 —</span>
+                    <span>Все интересные места находятся очень близко</span>
                   </p>
                 </li>
 
                 <li class="advantages__item advantages__item--secondary">
-                  <h3 class="advantages__title">
+                  <h3 class="advantages__title advantages__title--secondary">
                     Красивая дорога
                   </h3>
-                  <p class="advantages__description">
-                    Ехать в Седону из Лас-Вегаса совсем не скучно!
+                  <p class="advantages__description advantages__description--secondary">
+                    <span class="display-block">— №4 —</span>
+                    <span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
                   </p>
                 </li>
 
                 <li class="advantages__item advantages__item--secondary">
-                  <h3 class="advantages__title">
+                  <h3 class="advantages__title advantages__title--secondary">
                     Мало туристов
                   </h3>
-                  <p class="advantages__description">
-                    Большинство едет в гранд каньон и толпится там
+                  <p class="advantages__description advantages__description--secondary">
+                    <span class="display-block">— №5 —</span>
+                    <span>Большинство едет в гранд каньон и толпится там</span>
                   </p>
                 </li>
               </ul>
@@ -169,9 +174,8 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны.</h2>
-        <div class="map__img">
-          <img src="img/map.jpg" alt="Карта Седоны.">
-        </div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1sZS-hf67iMb2t8ToX6StBqVgAUo&hl=en&ehbc=2E312F"
+          allowfullscreen title="Улица с магазинами по адресу 336 AZ-179, Sedona, AZ 86336"></iframe>
       </section>
     </main>
 
@@ -236,6 +240,8 @@
     </footer>
 
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

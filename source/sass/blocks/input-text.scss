@@ -1,13 +1,14 @@
 .input-text {
-  .input-text__field {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+}
 
-    background-color: #f2f2f2;
+.input-text__field {
+  @include big-text(700);
 
-    border: none;
+  background-color: #f2f2f2;
 
-    padding: 16px 16px;
-  }
+  border: none;
+
+  padding: 16px 16px;
 }

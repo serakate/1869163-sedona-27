@@ -1,19 +1,19 @@
 .form {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
+}
 
-  .form__heading {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
+.form__heading {
+  @include big-text(700);
 
-    text-transform: uppercase;
-  }
+  margin: 0 0 40px;
 
-  .form__button {
-    font-size: 21px;
+  text-transform: uppercase;
+}
 
-    color: #ffffff;
-    background-color: #81b3d2;
-  }
+.form__button {
+  @include huge-text(700);
+
+  color: #ffffff;
+  background-color: #81b3d2;
 }
