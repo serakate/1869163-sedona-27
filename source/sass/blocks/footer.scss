@@ -1,24 +1,23 @@
 .footer {
-  .footer__wrapper {
-    padding: 25px 77px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+}
 
-    display: flex;
-    flex-direction: column;
+.footer__wrapper {
+  padding: 25px 77px;
 
-    @media (min-width: $tablet-width) {
-      flex-direction: row;
-    }
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
+}
 
-  .footer__hashtag {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
+.footer__hashtag {
+  @include huge-text(700);
 
-    text-transform: uppercase;
-    text-decoration: none;
-    color: inherit;
-  }
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
 }

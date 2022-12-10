@@ -5,9 +5,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
 
-  .list-icon__item {
-    padding: 23px 18px;
-    text-align: start;
-  }
+.list-icon__item {
+  padding: 23px 18px;
+  text-align: start;
+  min-height: 161px;
 }

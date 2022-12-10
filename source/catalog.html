@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +15,7 @@
       <a class="header__logo logo" href="index.html">
         <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип «Седона».">
       </a>
-      <nav class="nav">
+      <nav class="nav nav--closed nav--nojs">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="nav__wrapper">
           <ul class="nav__list">
@@ -67,8 +68,9 @@
         <ul class="catalog__list">
 
           <li class="catalog__item item-main">
-            <div class="catalog__img">
-              <img src="img/catalog-1.jpg" alt="Фотография горизонта на закате." width="280" height="280">
+            <div class="catalog__img-wrapper">
+              <img class="catalog__img" src="img/catalog-1.jpg" alt="Фотография горизонта на закате." width="280"
+                height="280">
             </div>
             <div class="catalog__text">
               <h3 class="catalog__title">Неродные просторы</h3>
@@ -78,8 +80,9 @@
           </li>
 
           <li class="catalog__item">
-            <div class="catalog__img">
-              <img src="img/catalog-2.jpg" alt="Фотография местной природы Седоны." width="280" height="280">
+            <div class="catalog__img-wrapper">
+              <img class="catalog__img" src="img/catalog-2.jpg" alt="Фотография местной природы Седоны." width="280"
+                height="280">
             </div>
             <div class="catalog__text">
               <h3 class="catalog__title">Местная растительность</h3>
@@ -89,8 +92,9 @@
           </li>
 
           <li class="catalog__item">
-            <div class="catalog__img">
-              <img src="img/catalog-3.jpg" alt="Фотография дороги в сосновом лесу." width="280" height="280">
+            <div class="catalog__img-wrapper">
+              <img class="catalog__img" src="img/catalog-3.jpg" alt="Фотография дороги в сосновом лесу." width="280"
+                height="280">
             </div>
             <div class="catalog__text">
               <h3 class="catalog__title">Дорога на север</h3>
@@ -100,8 +104,9 @@
           </li>
 
           <li class="catalog__item">
-            <div class="catalog__img">
-              <img src="img/catalog-4.jpg" alt="Фотография моста дьявола." width="280" height="280">
+            <div class="catalog__img-wrapper">
+              <img class="catalog__img" src="img/catalog-4.jpg" alt="Фотография моста дьявола." width="280"
+                height="280">
             </div>
             <div class="catalog__text">
               <h3 class="catalog__title">Мост дьявола</h3>
@@ -118,8 +123,9 @@
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
-        <div class="presentation__video">
-          <img src="img/presentation.jpg" alt="Превью видеопрезентации о городке Седона." width="280" height="177">
+        <div class="presentation__img-wrapper">
+          <img class="presentation__img" src="img/presentation.jpg" alt="Превью видеопрезентации о городке Седона."
+            width="280" height="177">
         </div>
       </section>
 
@@ -186,6 +192,8 @@
     </footer>
 
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

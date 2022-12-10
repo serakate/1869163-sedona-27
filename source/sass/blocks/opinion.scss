@@ -1,0 +1,14 @@
+.opinion {
+  height: 160px;
+  min-width: 280px;
+
+  padding: 16px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 768px;
+  }
+}

@@ -2,65 +2,80 @@
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   text-transform: uppercase;
+}
 
-  .advantages__title {
-    margin: 0;
+.advantages__title {
+  margin: 0 0 30px;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
+  @include big-text(700);
+}
+
+.advantages__description {
+  margin: 0;
+
+  @include regular-text(400);
+
+  &--secondary::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+    width: 284px;
+    height: 1px;
+
+    background: #d6d6d6;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  min-width: 320px;
+
+  &--accent {
+    background-color: #81b3d2;
+    color: #ffffff;
   }
 
-  .advantages__description {
-    margin: 0;
+  &--secondary {
+    background-color: #eeeeee;
+    min-height: 171px;
+    padding: 40px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+    position: relative;
   }
+}
 
-  .advantages__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.advantages__content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
+}
 
-  .advantages__item {
-    &--accent {
-      background-color: #81b3d2;
-      color: #ffffff;
-    }
+.advantages__text {
+  min-height: 256px;
 
-    &--secondary {
-      background-color: #eeeeee;
-    }
+  @include flex-center(column);
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
   }
+}
 
-  .advantages__content {
-    @media (min-width: $tablet-width) {
-      height: 256px;
+.advantages__img-wrapper {
+  min-width: 320px;
+  min-height: 256px;
+}
 
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  .advantages__text {
-    @media (min-width: $tablet-width) {
-      min-width: 256px;
-
-      margin: 42px auto;
-    }
-  }
-
-  .advantages__img-wrapper {
-    @media (min-width: $tablet-width) {
-      min-width: 256px;
-    }
-  }
-
-  .advantages__img {
-    height: 100%;
-    object-fit: cover;
-  }
+.advantages__img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  display: block;
 }
