@@ -1,9 +1,0 @@
-.item-main {
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / 4;
-  }
-}

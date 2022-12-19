@@ -3,8 +3,10 @@
 
   text-transform: uppercase;
   padding: 38px 18px 49px;
+  margin: 0 auto;
 
   min-height: 290px;
+  max-width: 435px;
 }
 
 .interested__title {
@@ -32,12 +34,11 @@
   background-color: #81b3d2;
 
   min-width: 284px;
-  height: 58px;
+  min-height: 58px;
 
   padding: 16px 49px;
 
   @media (min-width: $tablet-width) {
     min-width: 458px;
-    padding: 15px 121px;
   }
 }
