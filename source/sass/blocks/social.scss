@@ -1,5 +1,7 @@
 .social {
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .social__list {
@@ -9,5 +11,11 @@
   list-style: none;
 
   display: flex;
+  justify-content: center;
   gap: 6px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+  }
 }

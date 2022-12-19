@@ -43,7 +43,12 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
+}
+
+.form-block__grade-item {
+  margin: 0 20px 30px;
 }
 
 .form-block__name-item {
