@@ -1,0 +1,27 @@
+.grade-wrapper {
+  width: 100%;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 200%;
+    height: 1px;
+
+    background-color: #dbdbdb;
+
+    top: 0;
+    right: -50%;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+
+      top: 13px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+}

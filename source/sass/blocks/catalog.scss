@@ -1,5 +1,15 @@
 .catalog {
   font-family: "PT Sans", sans-serif;
+
+  margin: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .catalog__list {

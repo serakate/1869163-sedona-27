@@ -1,8 +1,53 @@
 .user-info {
-  padding: 50px;
+  position: relative;
+
+  margin: 0 20px 50px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 0 60px 50px;
+
+    &::before {
+      position: absolute;
+
+      content: "";
+
+      width: 1px;
+      height: 100%;
+
+      right: 50%;
+
+      background-color: #dbdbdb;
+    }
   }
+}
+
+.user-info .form__heading {
+  position: relative;
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    width: 500%;
+    height: 1px;
+
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #dbdbdb;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
+  }
+}
+
+.user-info .form__block {
+  margin-bottom: 50px;
 }
