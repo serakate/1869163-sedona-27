@@ -2,7 +2,7 @@
   font-family: "PT Sans", sans-serif;
   font-style: normal;
 
-  margin: 0 0 50px;
+  margin: 0;
   padding: 0;
 
   min-height: 200px;
@@ -13,7 +13,7 @@
 .form-block__title {
   @include regular-text(400);
 
-  margin-right: auto;
+  margin: 16px auto 0 0;
 
   text-transform: uppercase;
 
@@ -35,20 +35,24 @@
 
   list-style: none;
 
+  text-align: start;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
   }
 }
 
 .form-block__grade-item {
-  margin: 0 20px 30px;
+  margin: 0 0 50px 30px;
 }
 
 .form-block__name-item {

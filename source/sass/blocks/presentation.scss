@@ -5,6 +5,16 @@
   text-transform: uppercase;
 
   min-height: 350px;
+
+  margin: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 200px;
+  }
 }
 
 .presentation__title {
@@ -27,4 +37,6 @@
 
 .presentation__img {
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
