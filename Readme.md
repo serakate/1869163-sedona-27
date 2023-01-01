@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-- Студент: [Valerie Kravtsova](https://up.htmlacademy.ru/adaptive/27/user/1869163).
-- Наставник: `Виктория Никитина`.
+* Студент: [Valerie Kravtsova](https://up.htmlacademy.ru/adaptive/27/user/1869163).
+* Наставник: `Какая-то котяра`.
 
 ---
 
